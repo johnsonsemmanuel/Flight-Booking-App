@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esper Flights - Flight Booking</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Esper Flights</h1>
+    <ul class="flight-list">
+      <li class="flight-item">
+        <h2>Airline 1</h2>
+        <p>Flight Number: XYZ123</p>
+        <p>Departure: 10:00 AM</p>
+        <p>Price: $200</p>
+        <button onclick="bookFlight('Airline 1')">Book Now</button>
+      </li>
+      <!-- Repeat similar structure for other airlines -->
+    </ul>
+
+    <div id="booking-modal" class="modal">
+      <div class="booking-form">
+        <h2>Book Your Flight</h2>
+        <input type="text" id="fullname" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <button onclick="confirmBooking()">Confirm Booking</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
